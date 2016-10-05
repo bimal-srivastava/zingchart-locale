@@ -1,0 +1,75 @@
+(function(){
+  var locale = {
+  	'rtl' : false,
+  	'decimals-separator' : '.',
+  	'thousands-separator' : ',',
+  	'menu-reload' : 'पुनः लोड करें',
+  	'menu-print' : 'चार्ट प्रिंट करें',
+  	'menu-viewaspng' : 'पीएनजी के रूप में देखें',
+  	'menu-viewasjpg' : 'जेपीजी के रूप में देखें',
+  	'menu-downloadpdf' : 'डाउनलोड पीडीएफ',
+  	'menu-downloadsvg' : 'डाउनलोड एसवीजी',
+  	'menu-exportdata' : 'एक्सपोर्ट डाटा ',
+  	'menu-zoomin' : 'बड़ा करें ',
+  	'menu-zoomout' : 'छोटा करें ',
+  	'menu-viewall' : 'सारा देखें ',
+  	'menu-viewsource' : 'स्रोत देखें',
+  	'menu-bugreport' : 'समस्या भेजें ',
+  	'menu-switchto2d' : '२-डी में देखें ',
+  	'menu-switchto3d' : '३-डी में देखें ',
+  	'menu-showguide' : 'गाइड देखें ',
+  	'menu-hideguide' : 'गाइड छिपाएं ',
+  	'menu-switchtolin' : 'रैखिक स्केल दिखाएँ',
+  	'menu-switchtolog' : 'लघुगणकीय स्केल दिखाएँ',
+  	'menu-fullscreen' : 'पूर्ण स्क्रीन',
+  	'menu-exitfullscreen' : 'पूर्ण स्क्रीन से बाहर निकलें',
+  	'menu-goback' : 'वापस जायें ',
+  	'menu-goforward' : 'आगे जायें',
+  	'date-formats' : {
+  		'msecond' : '%d %M %Y<br>%g:%i:%s %A<br>%q ms',
+  		'second' : '%d %M %Y<br>%g:%i:%s %A',
+  		'minute' : '%d %M %Y<br>%g:%i %A',
+  		'hour' : '%d %M %Y<br>%g %A',
+  		'day' : '%d %M %Y',
+  		'month' : '%M %Y',
+  		'year' : '%Y'
+  	},
+  	'days-short' : ['रवि', 'सोम', 'मंगल', 'बुध', 'गुरु', 'शुक्र', 'शनि'],
+  	'days-long' : ['रविवार', 'सोमवार', 'मंगलवार', 'बुधवार', 'गुरुवार', 'शुक्रवार', 'शनिवार'],
+  	'months-short' : ['जनवरी', 'फ़रवरी', 'मार्च', 'अप्रैल','मई ','जून', 'जुलाई', 'अगस्त', 'सितम्बर', 'अक्टूबर', 'नवंबर, दिसंबर'],
+  	'months-long' : ['जनवरी', 'फ़रवरी', 'मार्च', 'अप्रैल','मई ','जून', 'जुलाई', 'अगस्त', 'सितम्बर', 'अक्टूबर', 'नवंबर, दिसंबर'],
+  	'sync-wait' : 'प्रतीक्षा करें...',
+  	'export-wait' : 'एक्सपोर्टिंग...',
+  	'progress-wait-long' : 'प्रतीक्षा करें। लोड हो रहा है...',
+  	'progress-wait-short' : 'प्रतीक्षा करें...',
+  	'progress-wait-mini' : '...',
+  	'error-header' : 'एक त्रुटि हुई है',
+  	'error-message' : 'त्रुटि संदेश:',
+  	'error-close' : 'बंद करें',
+  	'bugreport-header' : 'समस्या रिपोर्ट जमा करें ',
+  	'bugreport-senddata' : 'JSON डेटा भेजें',
+  	'bugreport-sendcapture' : 'ग्राफ़ भेजें',
+  	'bugreport-yourcomment' : 'आपकी टिप्पणी:',
+  	'bugreport-jsondata' : 'JSON डेटा:',
+  	'bugreport-youremail' : 'आपका ईमेल पता',
+  	'bugreport-infoemail' : 'अगर आप ईमेल के माध्यम से समस्या का उत्तर प्राप्त करना चाहते हैं',
+  	'bugreport-emailmandatory' : 'ईमेल पता अनिवार्य है...',
+  	'bugreport-submit' : 'जमा करें',
+  	'bugreport-cancel' : 'रद्द करें',
+  	'bugreport-confirm' : 'आपकी समस्या रिपोर्ट भेज दी गयी है।\n\nधन्यवाद!',
+  	'about-close' : 'बंद करें',
+  	'viewsource-jsonsource' : 'पार्स किया हुआ JSON',
+  	'viewsource-originalsource' : 'मूल JSON',
+  	'viewsource-close' : 'बंद करें',
+  	'viewsource-apply' : 'लागू करें',
+  	'viewimage-close' : 'बंद करें',
+  	'legend-pagination' : 'पृष्ठ %page% of %pages%'
+  };
+  
+  if (typeof zingchart !== 'undefined') {
+    zingchart.i18n.hi_in = locale;
+  }
+  else if (typeof window === 'undefined' && module.exports !== 'undefined'){
+    module.exports = locale;
+  }
+})();
